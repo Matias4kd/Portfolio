@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Matias Fourcade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Matías Fourcade</a>
+            </div>
+            <nav id="nav"> 
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobreMi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#conocimientos" onclick="seleccionar()">CONOCIMIENTOS</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="imagenes/Matias.JPG" alt="">
+            </div>
+
+            <h1>Matias Fourcade</h1>
+            <p>Estudiante de la Tecnicatura en programación en la Universidad Tecnológica Nacional (FRGP).</p> 
+            
+            <div class="redes-sociales">
+                <a href="https://www.linkedin.com/in/mat%C3%ADas-fourcade-0a1767174/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Matias4kd"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobreMi" class="sobreMi">
+        <div class="contenido">
+            <div class="fila">
+                <div class="columnaImg">
+                    <div class="contenedor-img">
+                        <img src="imagenes/setup.jpg" alt="">
+                    </div>
+                </div>
+                <div class="columnainfo">
+                    <h2>Sobre Mi:</h2>
+                    <p><span>Hola, soy Matias Fourcade</span> Actualmente me encuentro estudiando la Tecnicatura en programación en la Universidad Tecnológica Nacional. 
+                    A su vez, por mi lado me estoy adentrando en el mundo de desarrollo de videojuegos. Hoy me encuentro trabajando como Project Manager en PwC y vivo en 
+                    Buenos Aires, Argentina. 
+                    En mi tiempo libre siempre intento seguir con mis pasiones, el fútbol, los videojuegos y disfrutar de buena música.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conocimientos" class="conocimientos">
+        <h1>Conocimientos: </h1>
+        <div class="contenido">
+            <div class="fila1">
+                <div class="columna1">
+                    <img src="imagenes/c.png" alt=" C">
+                </div>
+                <div class="columna2">
+                    <img src="imagenes/c++.png" alt=" C++">
+                </div>
+                <div class="columna3">
+                    <img src="https://seeklogo.com/images/C/csharp-logo-58C6C6F67A-seeklogo.com.png" alt="C#">
+                </div>
+            </div>
+            <div class="fila2">
+                <div class="columna1">
+                    <img src="imagenes/net.png" alt="">
+                </div>
+                <div class="columna2">
+                    <img src="imagenes/sql.png" alt="">
+                </div>
+                <div class="columna3">
+                    <img src="imagenes/unity.png" alt="">
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section class="proyectos" id="proyectos">
+        <div class="contenido-proyectos">
+            <h2>Proyectos:</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://github.com/Matias4kd/TP-LAB-2-">
+                        <img src="imagenes/Terminal_icon.jpg" alt="Consola de comando">
+                        <div class="overlay">
+                            <h3>Herramienta de gestión</h3>
+                            <p>Applicación de consola para gestión de stock y ventas de ferretería desarrollado en C++</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/zanottoh/tp-winform-equipo-18A">
+                        <img src="imagenes/winforms-logo.png" alt="Winforms">
+                        <div class="overlay">
+                            <h3>Herramienta de gestión de artículos</h3>
+                            <p>Applicación de escritorio para registro de artículos desarrollado en .NET framework</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/Matias4kd/TP-LAB-1">
+                        <img src="imagenes/Terminal_icon.jpg" alt="Consola de comando">
+                        <div class="overlay">
+                            <h3>Clutch</h3>
+                            <p>Juego de cartas en consola de comando desarrollado en C++</p>
+                        </div>
+                    </a>
+                </div>
+            </div>    
+        </div>  
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div id="contenido" class="contenido">
+            <h2>CONTACTO:</h2>
+            <form action="https://formsubmit.co/matiasfourcade6@gmail.com" method="POST">
+
+                <input type="text" placeholder="Tu nombre">
+                <input type="text" placeholder="Número telefónico">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Tema">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button>
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes-sociales">
+            <a href="https://www.linkedin.com/in/mat%C3%ADas-fourcade-0a1767174/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Matias4kd"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
